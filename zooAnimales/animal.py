@@ -17,8 +17,7 @@ class Animal:
         from zooAnimales.mamifero import Mamifero
         from zooAnimales.pez import Pez
         from zooAnimales.reptil import Reptil
-        cadena="Mamiferos: "+str(Mamifero.cantidadMamiferos())+"\nAves: "+str(Ave.cantidadAves())+"\nReptiles: "+str(Reptil.cantidadReptiles())+"\nPeces: "+str(Pez.cantidadPeces())+"\nAnfibios: "+str(Anfibio.cantidadAnfibios())
-        return cadena
+        return "Mamiferos : " + str(Mamifero.cantidadMamiferos()) +  "\nAves : " + str(Ave.cantidadAves()) + "\nReptiles : " + str(Reptil.cantidadReptiles()) + "\nPeces : " + str(Pez.cantidadPeces()) + "\nAnfibios : " + str(Anfibio.cantidadAnfibios())
 
     def toString(self):
         if self._zona==None:
