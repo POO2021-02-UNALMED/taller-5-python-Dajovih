@@ -20,7 +20,9 @@ class Animal:
         cadena="Mamiferos: "+str(Mamifero.cantidadMamiferos())+"\nAves: "+str(Ave.cantidadAves())+"\nReptiles: "+str(Reptil.cantidadReptiles())+"\nPeces: "+str(Pez.cantidadPeces())+"\nAnfibios: "+str(Anfibio.cantidadAnfibios())
         return cadena
 
-    def __str__(self):
+    def toString(self):
+        from gestion.zona import Zona
+        from gestion.zoologico import Zoologico
         if self._zona==None:
             cadena="Mi nombre es "+self._nombre+", tengo una edad de "+str(self._edad)+", habito en "+self._habitat+" y mi genero es "+self._genero
             return cadena
