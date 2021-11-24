@@ -1,5 +1,3 @@
-from zooAnimales.animal import Animal
-
 class Zona():
     def __init__(self,nombre,zoo):
         self._nombre=nombre
@@ -7,6 +5,7 @@ class Zona():
         self._animales=[]
     
     def agregarAnimales(self,Animal):
+        from zooAnimales.animal import Animal
         Animal.setZona(self)
         self._animales.append(Animal)
     
