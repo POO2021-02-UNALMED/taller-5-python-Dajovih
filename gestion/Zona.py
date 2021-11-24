@@ -5,7 +5,6 @@ class Zona:
         self._animales=[]
     
     def agregarAnimales(self,Animal):
-        from zooAnimales.animal import Animal
         Animal.setZona(self)
         self._animales.append(Animal)
     

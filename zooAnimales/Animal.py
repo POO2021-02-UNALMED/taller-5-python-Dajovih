@@ -21,8 +21,6 @@ class Animal:
         return cadena
 
     def toString(self):
-        from gestion.zona import Zona
-        from gestion.zoologico import Zoologico
         if self._zona==None:
             cadena="Mi nombre es "+self._nombre+", tengo una edad de "+str(self._edad)+", habito en "+self._habitat+" y mi genero es "+self._genero
             return cadena
