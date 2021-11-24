@@ -1,5 +1,6 @@
-from gestion import *
-from zooAnimales.Animal import *
+from gestion.zona import Zona
+from gestion.zoologico import Zoologico
+from zooAnimales.animal import *
 class Animal():
     _totalAnimales=0
     def __init__(self,nombre,edad,habitat,genero):
@@ -14,11 +15,11 @@ class Animal():
         return "desplazarse"
 
     def totalPorTipo(self):
-        from zooAnimales.Anfibio import Anfibio
-        from zooAnimales.Ave import Ave
-        from zooAnimales.Mamifero import Mamifero
-        from zooAnimales.Pez import Pez
-        from zooAnimales.Reptil import Reptil
+        from zooAnimales.anfibio import Anfibio
+        from zooAnimales.ave import Ave
+        from zooAnimales.mamifero import Mamifero
+        from zooAnimales.pez import Pez
+        from zooAnimales.reptil import Reptil
         cadena="Mamiferos: "+str(Mamifero.cantidadMamiferos())+"\nAves: "+str(Ave.cantidadAves())+"\nReptiles: "+str(Reptil.cantidadReptiles())+"\nPeces: "+str(Pez.cantidadPeces())+"\nAnfibios: "+str(Anfibio.cantidadAnfibios())
         return cadena
 

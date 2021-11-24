@@ -1,5 +1,5 @@
-from gestion.Zona import Zona
-from zooAnimales.Animal import Animal
+from gestion.zona import Zona
+from zooAnimales.animal import Animal
 
 class Zoologico():
     def __init__(self,nombre,ubicacion):
